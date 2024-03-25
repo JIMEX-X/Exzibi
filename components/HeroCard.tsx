@@ -18,10 +18,12 @@ import { TiDocumentDelete } from "react-icons/ti";
 import { links, socialLinks } from "@/lib/data";
 import Link from "next/link";
 import StarGrid from "./StarGrid";
+import { useActiveSection } from "@/context/active-section-context";
 
 type Props = {};
 
 const HeroCard = (props: Props) => {
+    const {setActiveSection,setTimeOfLastClick} = useActiveSection()
   return (
     <div className="w-full h-full">
       <Card className="pt-4 relative w-full h-full dark:bg-gray-900 bg-gray-50">
@@ -50,7 +52,10 @@ const HeroCard = (props: Props) => {
                 </p>
 
                 <div className="flex justify-between flex-col sm:flex-row text-center items-center gap-3">
-                  <ButtonLink className="bg-gray-900  text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105  transition">
+                  <ButtonLink onClick={() => {
+                    setActiveSection("Contact")
+                    setTimeOfLastClick(Date.now())
+                  }} className="bg-gray-900  text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105  transition">
                     Contact
                   </ButtonLink>
                   <a

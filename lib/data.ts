@@ -1,5 +1,8 @@
 import React from "react";
 import { FaEnvelope, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from "react-icons/fa";
+import birthmirthImg from "@/public/med_birth-pic1.png";
+import naijaflixImg from "@/public/corp.png";
+import webMessengerImg from "@/public/birthpic.png";
 
 export const links = [
   {
@@ -15,8 +18,8 @@ export const links = [
     hash: "#Engineering",
   },
   {
-    name: "Volunteering",
-    hash: "#Volunteering",
+    name: "Projects",
+    hash: "#Projects",
   },
   {
     name: "Certifications",
@@ -111,7 +114,7 @@ export const skillsData = [
 
 export const socialLinks = [
   {
-    name: "Twitter",
+    name: "X (Twitter)",
     url: "XXXXXXXXXXXXXXXXXXXXXXXXXX",
     icon: FaTwitter,
   },
@@ -139,5 +142,29 @@ export const socialLinks = [
     name: "Phone",
     url: "XXXXXXXXXXXXXXXXXXXXXXXXXX",
     icon: FaPhoneAlt,
+  },
+] as const;
+
+export const projectsData = [
+  {
+    title: "Birthmate chat",
+    description:
+      "I worked as a full-stack developer on this startup project for 2 years. Users can chat with each other.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    imageUrl: birthmirthImg,
+  },
+  {
+    title: "Naijaflix",
+    description:
+      "Movie site for searching popular, trending movies and more. I was the front-end developer. It has features like liking, watching traillers (Youtube), filtering, sorting and pagination.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux", "clerk"],
+    imageUrl: naijaflixImg,
+  },
+  {
+    title: "web messenger",
+    description:
+      "A public web app for quick conversation with friends. It shows active status of a user.",
+    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    imageUrl: webMessengerImg,
   },
 ] as const;

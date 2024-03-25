@@ -8,6 +8,8 @@ import { useGSAP } from "@gsap/react";
 import usePrefersReducedMotion from "@/hooks/usePrefersReducedMotion";
 import Image from "next/image";
 import HeroCard from "../HeroCard";
+import { useActiveSection } from "@/context/active-section-context";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function AnimatedContent() {
   const container = useRef(null);
@@ -60,6 +62,9 @@ export default function AnimatedContent() {
     { scope: container }
   );
 
+  const {setActiveSection,activeSection,setTimeOfLastClick} = useActiveSection()
+  const { ref } = useSectionInView("Home", 0.5)
+
   return (
     <div className="relative" ref={container}>
       <StarGrid />
@@ -76,11 +81,11 @@ export default function AnimatedContent() {
         Product Manager
       </div>
 
-      <ButtonLink className="hero__button mt-8 opacity-0" href="/about">
+      {/* <ButtonLink className="hero__button mt-8 opacity-0" href="/about">
         Learn more
-      </ButtonLink>
+      </ButtonLink> */}
 
-      <div className="hero__image glass-container mt-16 w-full lg:w-[69rem] lg:h-96 opacity-0">
+      <div ref={ref} id="Home" className="hero__image glass-container mt-16 w-full lg:w-[69rem] lg:h-96 opacity-0">
         <div className="hero__glow absolute inset-0 -z-10 bg-blue-500/30 opacity-0 blur-2xl filter" />
           <HeroCard />
       </div>
