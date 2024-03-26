@@ -66,7 +66,7 @@ export default function AnimatedContent() {
   const { ref } = useSectionInView("Home", 0.5)
 
   return (
-    <div className="relative" ref={container}>
+    <div id="Home" className="relative" ref={container}>
       <StarGrid />
       <h1 className="hero__heading flex flex-col items-center gap-3 text-balance text-5xl font-medium opacity-0 md:text-6xl">
         Precious Abuo
@@ -85,7 +85,7 @@ export default function AnimatedContent() {
         Learn more
       </ButtonLink> */}
 
-      <div ref={ref} id="Home" className="hero__image glass-container mt-16 w-full lg:w-[69rem] lg:h-96 opacity-0">
+      <div ref={ref}  className="hero__image glass-container mt-16 w-full lg:w-[69rem] lg:h-96 opacity-0">
         <div className="hero__glow absolute inset-0 -z-10 bg-blue-500/30 opacity-0 blur-2xl filter" />
           <HeroCard />
       </div>

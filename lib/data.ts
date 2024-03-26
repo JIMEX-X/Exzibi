@@ -1,8 +1,32 @@
 import React from "react";
 import { FaEnvelope, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from "react-icons/fa";
-import birthmirthImg from "@/public/med_birth-pic1.png";
-import naijaflixImg from "@/public/corp.png";
-import webMessengerImg from "@/public/birthpic.png";
+import asapApp from "@/public/asap.jpg";
+import asapWeb from "@/public/asapweb.jpg";
+import plito from "@/public/plito.jpg";
+
+export const projectsData = [
+  {
+    title: "Asap Website",
+    description:
+      "A local delivery and marketplace website sought to streamline commerce, enabling users to order from local businesses conveniently.",
+    tags: ["Website"],
+    imageUrl: asapWeb,
+  },
+  {
+    title: "Asap App",
+    description:
+      "In a world where convenience reigns supreme, ASAP embarked on a mission to transform local commerce.",
+    tags: ["Google store", "App store", "App"],
+    imageUrl: asapApp,
+  },
+  {
+    title: "Plito ",
+    description:
+      "Empowering Freelancers: A Case Study from UI to Completion   In a rapidly evolving gig economy, the need for a seamless freelance gig and personal banking platform became evident.",
+    tags: ["Google store", "App store", "App"],
+    imageUrl: plito,
+  },
+] as const;
 
 export const links = [
   {
@@ -138,33 +162,5 @@ export const socialLinks = [
     url: "XXXXXXXXXXXXXXXXXXXXXXXXXX",
     icon: FaEnvelope,
   },
-  {
-    name: "Phone",
-    url: "XXXXXXXXXXXXXXXXXXXXXXXXXX",
-    icon: FaPhoneAlt,
-  },
 ] as const;
 
-export const projectsData = [
-  {
-    title: "Birthmate chat",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can chat with each other.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: birthmirthImg,
-  },
-  {
-    title: "Naijaflix",
-    description:
-      "Movie site for searching popular, trending movies and more. I was the front-end developer. It has features like liking, watching traillers (Youtube), filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux", "clerk"],
-    imageUrl: naijaflixImg,
-  },
-  {
-    title: "web messenger",
-    description:
-      "A public web app for quick conversation with friends. It shows active status of a user.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: webMessengerImg,
-  },
-] as const;

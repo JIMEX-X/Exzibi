@@ -38,17 +38,17 @@ const HeroCard = (props: Props) => {
           <div className="flex w-full h-full flex-col md:flex-row items-center gap-8">
             <div className="flex flex-col justify-between w-full h-full items-center ">
                 <Image
-                  src={"/exzibi.jpg"}
+                  src={"/exi.jpg"}
                   alt="user"
-                  width={100}
-                  height={100}
-                  className="rounded-full"
+                  width={150}
+                  height={150}
+                  className="rounded-lg object-cover "
                 />
 
               <div className="flex gap-3 items-center flex-col mt-3">
                 <h1 className="font-bold">Precious Abuo</h1>
                 <p className="flex items-center gap-2 font-medium text-foreground opacity-80">
-                  <MapPin size={20} /> USA
+                  <MapPin size={20} /> NIGERIA
                 </p>
 
                 <div className="flex justify-between flex-col sm:flex-row text-center items-center gap-3">
@@ -82,17 +82,14 @@ const HeroCard = (props: Props) => {
                   <TiDocumentDelete size={20} /> Freelancer/Project{" "}
                   <ChevronRight className="ml-auto" />
                 </p>
-                {socialLinks.slice(4).map((link, index) => {
+                {socialLinks.slice(3).map((link, index) => {
                   const Icon = link.icon;
                   const isMail = link.name === "Email";
-                  const isPhone = link.name === "Phone";
                   return (
                     <Link
                       href={
                         isMail
                           ? `mailto:${link.url}`
-                          : isPhone
-                          ? `tel:${link.url}`
                           : link.url
                       }
                       className="flex group border-b w-full pb-2  items-center gap-2 font-medium text-foreground opacity-80"
@@ -110,7 +107,7 @@ const HeroCard = (props: Props) => {
                 <h1 className="font-bold border-b w-full pb-2 text-left">
                   Social links
                 </h1>
-                {socialLinks.slice(0, 4).map((link, index) => {
+                {socialLinks.slice(0, 3).map((link, index) => {
                   const Icon = link.icon;
                   return (
                     <Link
