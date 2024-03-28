@@ -171,7 +171,7 @@
 }
 
 .gold{
-  @apply font-bold bg-gradient-to-b from-yellow-100 to-yellow-500 bg-clip-text not-italic text-transparent
+  @apply font-bold bg-gradient-to-b from-yellow-300 to-yellow-500 bg-clip-text not-italic text-transparent
 }
 
 .fade-in-animation {

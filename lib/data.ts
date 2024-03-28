@@ -28,18 +28,17 @@ export const projectsData = [
   },
 ] as const;
 
+export const articleData = [
+  'https://medium.com/@abuopearl/embracing-diversity-and-inclusion-in-engineering-management-fb5c6ec7f22a',
+  'https://medium.com/@abuopearl/the-troubling-saga-of-property-mismanagement-in-nigeria-19498ecd6d6f',
+  'https://medium.com/@abuopearl/adopting-sustainable-practices-in-engineering-management-for-long-term-success-fdf2ef8ccd8b',
+  'https://medium.com/@abuopearl/the-evolution-of-agile-product-management-from-theory-to-practice-c007a630060a',
+] as const
+
 export const links = [
   {
     name: "Home",
     hash: "#Home",
-  },
-  {
-    name: "Manager",
-    hash: "#ProductManager",
-  },
-  {
-    name: "Engineering",
-    hash: "#Engineering",
   },
   {
     name: "Projects",

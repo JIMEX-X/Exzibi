@@ -70,7 +70,7 @@ export default function AnimatedContent() {
       <StarGrid />
       <h1 className="hero__heading flex flex-col items-center gap-3 text-balance text-5xl font-medium opacity-0 md:text-6xl">
         Precious Abuo
-        <span className="text-sm max-w-xl md:text-xl lg:text-2xl font-bold bg-gradient-to-b from-yellow-100 to-yellow-500 bg-clip-text not-italic text-transparent">
+        <span className="text-sm max-w-xl md:text-xl lg:text-2xl gold">
           A skilled Project Manager, guides complex projects with a
           hands-on, collaborative approach, fostering innovation and excellence
           while ensuring stakeholder alignment and transparency.

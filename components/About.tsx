@@ -31,7 +31,7 @@ const About = () => {
       </div>
       <div className="w-full flex flex-col md:flex-row items-center gap-9 about min-h-[200px] about mt-14">
         <div className="flex flex-col items-center font-medium">
-          <div className="content flex flex-col text-center items-center max-w-3xl ml-auto bg-gray-950/5 h-[100%] p-9 rounded-md shadow-sm dark:bg-gray-100/5 overflow-hidden">
+          <div className="content flex flex-col text-left items-center max-w-3xl ml-auto bg-gray-950/5 h-[100%] p-9 rounded-md shadow-sm dark:bg-gray-100/5 overflow-hidden">
             <p className="">
               I am Precious Abuo, a driven professional with a diverse
               background in mechanical engineering and a passion for the oil and
