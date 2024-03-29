@@ -1,8 +1,7 @@
-"use strict"
-import transporter from 'nodemailer'
-export const nodemailer = transporter.createTransport({
+import nodemailer from 'nodemailer'
+export const transporter = nodemailer.createTransport({
     service: "gmail",
-    port: process.env.NODEMAILER_PORT,
+    port: 465,
     host: process.env.NODEMAILER_HOST,
     auth: {
         pass: process.env.NODEMAILER_PASS,

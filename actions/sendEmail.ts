@@ -3,9 +3,9 @@
 import React from "react";
 import { validateString, getErrorMessage } from "@/lib/utils";
 import ContactFormEmail from "@/email/contact-form-email";
-import {nodemailer} from "@/lib/nodemailer.config"
+import {transporter} from "@/lib/nodemailer.config"
 
-export const sendEmail = async (formData) => {
+export const sendEmail = async (formData: FormData) => {
   if(!process.env.NODEMAILER_HOST && !process.env.NODEMAILER_PORT){
     return {
       error: "Email service is not configured"
@@ -38,7 +38,7 @@ export const sendEmail = async (formData) => {
         senderEmail: senderEmail,
       }),
     }
-    data = await nodemailer.sendMail(mailoptions, (err, info) => {
+    data = await transporter.sendMail(mailoptions, (err, info) => {
       if(err){
         return {
           error: getErrorMessage(err)
@@ -47,7 +47,7 @@ export const sendEmail = async (formData) => {
         console.log(`Email Sent: ${info.response}`)
       }
     })
-  } catch (error) {
+  } catch (error: unknown) {
     return {
       error: getErrorMessage(error),
     };
