@@ -5,7 +5,7 @@ import { validateString, getErrorMessage } from "@/lib/utils";
 import ContactFormEmail from "@/email/contact-form-email";
 import {nodemailer} from "@/lib/nodemailer.config"
 
-export const sendEmail = async (formData: FormData) => {
+export const sendEmail = async (formData) => {
   if(!process.env.NODEMAILER_HOST && !process.env.NODEMAILER_PORT){
     return {
       error: "Email service is not configured"
@@ -38,7 +38,7 @@ export const sendEmail = async (formData: FormData) => {
         senderEmail: senderEmail,
       }),
     }
-    data = await nodemailer.sendMail(mailoptions, (err: any, info: any) => {
+    data = await nodemailer.sendMail(mailoptions, (err, info) => {
       if(err){
         return {
           error: getErrorMessage(err)
@@ -47,7 +47,7 @@ export const sendEmail = async (formData: FormData) => {
         console.log(`Email Sent: ${info.response}`)
       }
     })
-  } catch (error: unknown) {
+  } catch (error) {
     return {
       error: getErrorMessage(error),
     };
