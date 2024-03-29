@@ -26,20 +26,19 @@ const Header = () => {
         setIsNavOpen(false);
       }
     };
-  
+
     const handleDocumentClick = (event: MouseEvent) => {
       if (isNavOpen) {
         handleClickOutside(event);
       }
     };
-  
+
     document.addEventListener("click", handleDocumentClick);
-  
+
     return () => {
       document.removeEventListener("click", handleDocumentClick);
     };
   }, [isNavOpen]);
-  
 
   useEffect(() => {
     // setIsTablet(window.innerWidth < 1024);
@@ -119,17 +118,13 @@ const Header = () => {
 
       {/* mobile nav */}
       <nav className="fixed pl-9 top-2 right-4 sm:hidden w-full z-[999] flex items-center justify-center  ">
-        <div className="italic text-2xl font-bold">
-          Precious
-        </div>
+        <div className="italic text-2xl font-bold tracking-tighter">Precious Abuo</div>
         <div
           ref={navRef}
           onClick={() => setIsNavOpen(!isNavOpen)}
           className="h-12 w-12 ml-auto items-center flex justify-center rounded-full bg-gray-950 text-gray-200 dark:bg-gray-200 dark:text-gray-950 dark:hover:bg-gray-200 dark:hover:text-gray-950 hover:bg-gray-200 hover:text-gray-950 transition-colors duration-300 ease-in-out cursor-pointer"
         >
-          {
-            isNavOpen ?  <X/> : <GiHamburgerMenu />
-          }
+          {isNavOpen ? <X /> : <GiHamburgerMenu />}
         </div>
         {isNavOpen && (
           <div className="fixed top-14 right-0 w-full pb-16 flex-wrap h-56 flex bg-transparent backdrop-blur-2xl items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 ">

@@ -42,7 +42,7 @@ const HeroCard = (props: Props) => {
                   alt="user"
                   width={150}
                   height={150}
-                  className="rounded-lg object-cover "
+                  className="rounded-full h-40 w-40 object-cover "
                 />
 
               <div className="flex gap-3 items-center flex-col mt-3">
