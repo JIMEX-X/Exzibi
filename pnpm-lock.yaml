@@ -17,9 +17,6 @@ dependencies:
   '@react-email/components':
     specifier: ^0.0.16
     version: 0.0.16(@types/react@18.2.73)(react@18.2.0)
-  '@react-email/tailwind':
-    specifier: ^0.0.15
-    version: 0.0.15(react@18.2.0)
   '@types/nodemailer':
     specifier: ^6.4.14
     version: 6.4.14
