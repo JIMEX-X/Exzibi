@@ -138,12 +138,12 @@ export const skillsData = [
 export const socialLinks = [
   {
     name: "X (Twitter)",
-    url: "XXXXXXXXXXXXXXXXXXXXXXXXXX",
+    url: "https://x.com/p_abuo/",
     icon: FaTwitter,
   },
   {
     name: "Instagram",
-    url: "XXXXXXXXXXXXXXXXXXXXXXXXXX",
+    url: "https://www.instagram.com/juju__hephaestus?igsh=bnVoNmI2a3l1N3p4&utm_source=qr",
     icon: FaInstagram,
   },
   {
@@ -153,12 +153,12 @@ export const socialLinks = [
   },
   {
     name: "LinkedIn",
-    url: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    url: "http://linkedin.com/in/precious-abuo-3064aa1a1",
     icon: FaLinkedin,
   },
   {
     name: "Email",
-    url: "XXXXXXXXXXXXXXXXXXXXXXXXXX",
+    url: "abuopearl@gmail.com",
     icon: FaEnvelope,
   },
 ] as const;

@@ -5,15 +5,16 @@ import NavBar from "@/components/NavBar";
 import { ActiveSectionContextProvider } from "@/context/active-section-context";
 import ThemeContextProvider from "@/context/theme-context";
 import ThemeSwitch from "@/components/theme-switch";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Persona",
+  title: "Precious Abuo",
   description: "Precious Abuo, a skilled Project Manager, guides complex projects with a hands-on, collaborative approach, fostering innovation and excellence while ensuring stakeholder alignment and transparency.",
   icons: {
-    icon: 'exzibi.jpg',
-    shortcut: 'exzibi.jpg',
+    icon: 'exi.jpg',
+    shortcut: 'exi.jpg',
     password: 'XXXXXXXXXX'
   }
 };
@@ -35,6 +36,7 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
             <NavBar />
             {children}
+            <Toaster/>
             <ThemeSwitch/>
           </ActiveSectionContextProvider>
         </ThemeContextProvider>

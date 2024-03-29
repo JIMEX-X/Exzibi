@@ -7,6 +7,8 @@ import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import ButtonLink from "./ButtonLink";
 import { MdEmail } from "react-icons/md";
+import { toast } from "sonner";
+import { Button } from "./ui/button";
 // import toast from "react-hot-toast";
 
 export default function Contact() {
@@ -34,24 +36,26 @@ export default function Contact() {
       <SectionHeading>Contact me</SectionHeading>
 
       <div className="text-gray-700 flex items-center justify-center gap-2 -mt-6 dark:text-white/80">
-          <div className=""><MdEmail size={20} /></div>
+        <div className="">
+          <MdEmail size={20} />
+        </div>
         <a className="underline" href="mailto:preciousabou@gmail.com">
-           preciousabou@gmail.com
+          abuopearl@gmail.com
         </a>{" "}
       </div>
 
       <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
-          const { data } = await sendEmail(formData);
+          const { data, error } = await sendEmail(formData);
 
-          // if (error) {
-          //   toast.error(error);
-          //   return;
-          // }
+          if (error) {
+            toast.error(error);
+            return;
+          }
 
-          // toast.success("Email sent successfully!");
-          // setData({input: "", textArea: ""});
+          toast.success("Email sent successfully!");
+          setData({input: "", textArea: ""});
         }}
       >
         <input
@@ -73,7 +77,7 @@ export default function Contact() {
           required
           maxLength={5000}
         />
-        <ButtonLink type="submit">Submit</ButtonLink>
+        <ButtonLink children={<Button className="bg-transparent hover:bg-transparent text-gray-950 dark:text-gray-50" type="submit">Submit</Button>}/>
       </form>
     </motion.section>
   );

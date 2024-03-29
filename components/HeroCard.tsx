@@ -40,8 +40,8 @@ const HeroCard = (props: Props) => {
                 <Image
                   src={"/exi.jpg"}
                   alt="user"
-                  width={150}
-                  height={150}
+                  width={200}
+                  height={200}
                   className="rounded-full h-40 w-40 object-cover "
                 />
 
@@ -87,6 +87,7 @@ const HeroCard = (props: Props) => {
                   const isMail = link.name === "Email";
                   return (
                     <Link
+                      target="_blank"
                       href={
                         isMail
                           ? `mailto:${link.url}`
