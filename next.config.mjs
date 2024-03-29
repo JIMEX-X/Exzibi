@@ -9,7 +9,8 @@ const nextConfig = {
                 hostname: 'medium.com'
             },
         ]
-    }
+    },
+    transpilePackages: ['html-to-text'],
 };
 
 export default nextConfig;

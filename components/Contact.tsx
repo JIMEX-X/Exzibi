@@ -9,7 +9,7 @@ import ButtonLink from "./ButtonLink";
 import { MdEmail } from "react-icons/md";
 import { toast } from "sonner";
 import { Button } from "./ui/button";
-// import toast from "react-hot-toast";
+import {} from 'react-dom'
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
