@@ -78,7 +78,7 @@ export default function Contact() {
           required
           maxLength={5000}
         />
-        <ButtonLink children={<Button className="bg-transparent hover:bg-transparent text-gray-950 dark:text-gray-50" type="submit">Submit</Button>}/>
+        <Button className="text-gray-950 dark:text-gray-50" type="submit">Submit</Button>
       </form>
     </motion.section>
   );

@@ -42,10 +42,7 @@ type LinkMetadata = {
 export default function Article({ url }: Props) {
   const [metadata, setMetadata] = useState<LinkMetadata | null>(null);
 
-  useEffect(() => {
-    fetchMetaData();
-  }, [url]);
-
+  
   const fetchMetaData = async () => {
     try {
       const response = await fetch(`https://api.microlink.io/?url=${url}`);
@@ -55,6 +52,9 @@ export default function Article({ url }: Props) {
       console.log(error);
     }
   };
+  useEffect(() => {
+    fetchMetaData();
+  }, [url, fetchMetaData]);
   let newDate = null;
   if (metadata) {
     const date = metadata.date;
