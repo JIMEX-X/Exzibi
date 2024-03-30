@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEnvelope, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from "react-icons/fa";
+import { FaEnvelope, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaMedium, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 import asapApp from "@/public/asap.jpg";
 import asapWeb from "@/public/asapweb.jpg";
 import plito from "@/public/plito.jpg";
@@ -27,6 +27,20 @@ export const projectsData = [
     imageUrl: plito,
   },
 ] as const;
+
+
+export const certificateLink = [
+  'https://www.credly.com/badges/92ded78e-5803-4c13-a206-04686d062301/public_url',
+  'https://www.credly.com/badges/d7612ff8-53b2-4f4e-885e-01f8234120d3/public_url',
+  'https://drive.google.com/file/d/1YGVIjPAtzjqTzuBi3A1fXkT6vtUXVe0p/view?usp=drivesdk',
+  'https://drive.google.com/file/d/107ly0VZq7e0tIyrSFampt2fb8oI8edON/view?usp=drivesdk',
+  'https://drive.google.com/file/d/1DJrKJUHfUEYXGSQkcdwtizteVey8JIKr/view?usp=drivesdk',
+  'https://drive.google.com/file/d/13rHnDgC40iEQk1--nKtyHcpKn1JWMCHl/view?usp=drivesdk',
+  'https://drive.google.com/file/d/1knxq-2xZRJxGZ6s0K9sFXUEXSje5vGZP/view?usp=drivesdk',
+  'https://drive.google.com/file/d/1koN4QJdYBF9_JP-M61y2Bh5n7p-W7vTx/view?usp=drivesdk',
+  'https://drive.google.com/file/d/1dbkGsYtCTEbghW7rcivwZ_pq_S350ThF/view?usp=drivesdk',
+  'https://drive.google.com/file/d/1LNOVVlRtvlSN9QafNhtB19XSyHf5HYoq/view?usp=drivesdk',
+]
 
 export const articleData = [
   'https://medium.com/@abuopearl/embracing-diversity-and-inclusion-in-engineering-management-fb5c6ec7f22a',
@@ -148,7 +162,7 @@ export const socialLinks = [
   },
   {
     name: "Facebook",
-    url: "XXXXXXXXXXXXXXXXXXXXXXXXXX",
+    url: "https://www.facebook.com/profile.php?id=100087186654059&mibextid=LQQJ4d",
     icon: FaFacebook,
   },
   {
@@ -160,6 +174,11 @@ export const socialLinks = [
     name: "Email",
     url: "abuopearl@gmail.com",
     icon: FaEnvelope,
+  },
+  {
+    name: "Medium",
+    url: "abuopearl@gmail.com",
+    icon: FaMedium,
   },
 ] as const;
 
