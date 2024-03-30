@@ -77,8 +77,8 @@ export default function AnimatedContent() {
         </span>
       </h1>
 
-      <div className="hero__body mx-auto mt-6 max-w-md text-balance font-medium text-gray-600 dark:text-gray-300 opacity-0">
-        Mechanical Engineering
+      <div className="hero__body text-2xl tracking-widest mx-auto mt-6 max-w-md text-balance font-medium text-gray-600 dark:text-gray-300 opacity-0">
+        Welcome!
       </div>
 
       {/* <ButtonLink className="hero__button mt-8 opacity-0" href="/about">
