@@ -38,7 +38,7 @@ const HeroCard = (props: Props) => {
           <div className="flex w-full h-full flex-col md:flex-row items-center gap-8">
             <div className="flex flex-col justify-between w-full h-full items-center ">
                 <Image
-                  src={"/exibi.jpg"}
+                  src={"/exi.jpg"}
                   alt="user"
                   width={200}
                   height={200}
