@@ -9,7 +9,7 @@ import Certification from "./certificate";
 const Certifications = () => {
     const { ref } = useSectionInView("Certifications", 0.5)
   return (
-    <section id="Articles" ref={ref}>
+    <section id="Certifications" ref={ref}>
         <SectionHeading>Certifications</SectionHeading>
         <div className="">
             {

@@ -38,11 +38,11 @@ const HeroCard = (props: Props) => {
           <div className="flex w-full h-full flex-col md:flex-row items-center gap-8">
             <div className="flex flex-col justify-between w-full h-full items-center ">
                 <Image
-                  src={"/exi.jpg"}
+                  src={"/exibi.jpg"}
                   alt="user"
                   width={200}
                   height={200}
-                  className="rounded-full h-40 w-40 object-cover "
+                  className="rounded-full  h-40 w-40 object-cover "
                 />
 
               <div className="flex gap-3 items-center flex-col mt-3">
