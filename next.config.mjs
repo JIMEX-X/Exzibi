@@ -20,6 +20,9 @@ const nextConfig = {
             {
                 hostname: 'lh3.googleusercontent.com'
             },
+            {
+                hostname: 'cdn-static-1.medium.com'
+            },
         ]
     },
     transpilePackages: ['html-to-text'],

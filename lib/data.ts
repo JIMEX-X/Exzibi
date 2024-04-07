@@ -62,10 +62,10 @@ export const links = [
     name: "Certifications",
     hash: "#Certifications",
   },
-  {
-    name: "Articles",
-    hash: "#Articles",
-  },
+  // {
+  //   name: "Articles",
+  //   hash: "#Articles",
+  // },
   {
     name: "About",
     hash: "#About",

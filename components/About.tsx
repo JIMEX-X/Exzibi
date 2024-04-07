@@ -5,7 +5,7 @@ import image from "@/public/exi.jpg";
 import SectionHeading from "./section-heading";
 import Image from "next/image";
 const About = () => {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("About", 0.5);
   return (
     <motion.section
       ref={ref}

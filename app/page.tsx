@@ -15,8 +15,8 @@ export default function Home() {
       <Projects />
       <SectionDivider />
       <Certifications/>
-      <SectionDivider />
-      <Articles />
+      {/* <SectionDivider />
+      <Articles /> */}
       <SectionDivider/>
       <About/>
       <SectionDivider/>

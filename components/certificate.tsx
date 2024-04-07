@@ -105,7 +105,7 @@ export default function Certification({ url }: Props) {
                     className="flex gap-2 items-center "
                   >
                     <Image
-                      src={metadata.logo.url}
+                      src={metadata?.logo?.url || '/placeholder.jpg'}
                       alt="Publisher"
                       height={24}
                       width={24}

@@ -104,7 +104,7 @@ export default function Article({ url }: Props) {
                     className="flex gap-2 items-center "
                   >
                     <Image
-                      src={metadata.logo.url}
+                      src={metadata?.logo?.url || '/placeholder.jpg'}
                       alt="Publisher"
                       height={24}
                       width={24}
@@ -118,7 +118,7 @@ export default function Article({ url }: Props) {
               <Image
                 width={200}
                 height={350}
-                src={metadata.image.url}
+                src={metadata?.image?.url || '/placeholder.jpg'}
                 alt="Link Preview"
                 className="rounded h-48 hidden sm:block object-cover"
               />
