@@ -7,9 +7,9 @@ import { useSectionInView } from "@/lib/hooks";
 import Article from "./article";
 
 const Articles = () => {
-    const { ref } = useSectionInView("Articles", 0.5)
+    // const { ref } = useSectionInView("Articles", 0.5)
   return (
-    <section id="Articles" ref={ref}>
+    <section id="Articles" >
         <SectionHeading>Articles</SectionHeading>
         <div className="">
             {
