@@ -42,13 +42,12 @@ type LinkMetadata = {
 export default function Certification({ url }: Props) {
   const [metadata, setMetadata] = useState<LinkMetadata | null>(null);
 
-  
   const fetchMetaData = async () => {
     try {
       const response = await fetch(`https://api.microlink.io/?url=${url}`);
       const data = await response.json();
       setMetadata(data.data);
-      console.log(data.data)
+      console.log(data.data);
     } catch (error: any) {
       console.log(error);
     }
@@ -85,7 +84,7 @@ export default function Certification({ url }: Props) {
             <div className="flex items-center w-full h-full">
               <div className="flex flex-col">
                 <h2 className="font-bold mb-1  leading-6 tracking-wide">
-                  {metadata.title}
+                  {metadata.title.split(".")[0]}
                 </h2>
                 <Separator />
                 <div className="flex mt-3 gap-3 items-center">
@@ -97,7 +96,9 @@ export default function Certification({ url }: Props) {
                     {newDate?.toLocaleDateString()}
                   </span>
                 </div>
-                <p className="mt-6 font-normal">{metadata.description}</p>
+                <p className="mt-6 font-normal line-clamp-3">
+                  {metadata.description}
+                </p>
                 <div className="flex items-center gap-3 mt-3">
                   <Link
                     href={metadata.url}
@@ -105,7 +106,7 @@ export default function Certification({ url }: Props) {
                     className="flex gap-2 items-center "
                   >
                     <Image
-                      src={metadata?.logo?.url || '/placeholder.jpg'}
+                      src={metadata?.logo?.url || "/placeholder.jpg"}
                       alt="Publisher"
                       height={24}
                       width={24}
@@ -113,7 +114,15 @@ export default function Certification({ url }: Props) {
                     />
                     <span>{metadata.publisher}</span>
                   </Link>
-                  <Link href={url} target="_blank" className="hover:text-blue-500 transition-all duration-200 flex items-center text-foreground"> Read More<ExternalLink size={10}/></Link>
+                  <Link
+                    href={url}
+                    target="_blank"
+                    className="hover:text-blue-500 transition-all duration-200 flex items-center text-foreground"
+                  >
+                    {" "}
+                    Read More
+                    <ExternalLink size={10} />
+                  </Link>
                 </div>
               </div>
               {/* <Image

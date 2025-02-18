@@ -23,7 +23,7 @@ import { useActiveSection } from "@/context/active-section-context";
 type Props = {};
 
 const HeroCard = (props: Props) => {
-    const {setActiveSection,setTimeOfLastClick} = useActiveSection()
+  const { setActiveSection, setTimeOfLastClick } = useActiveSection();
   return (
     <div className="w-full h-full">
       <Card className="pt-4 relative w-full h-full dark:bg-gray-900 bg-gray-50">
@@ -32,18 +32,18 @@ const HeroCard = (props: Props) => {
           <CardDescription>Card Description</CardDescription>
         </CardHeader> */}
         <div className="absolute">
-            <StarGrid />
+          <StarGrid />
         </div>
         <CardContent className="w-full h-full">
           <div className="flex w-full h-full flex-col md:flex-row items-center gap-8">
             <div className="flex flex-col justify-between w-full h-full items-center ">
-                <Image
-                  src={"/exi.jpg"}
-                  alt="user"
-                  width={200}
-                  height={200}
-                  className="rounded-full  h-40 w-40 object-cover "
-                />
+              <Image
+                src={"/exi.jpg"}
+                alt="user"
+                width={200}
+                height={200}
+                className="rounded-full  h-40 w-40 object-cover "
+              />
 
               <div className="flex gap-3 items-center flex-col mt-3">
                 <h1 className="font-bold">Precious Abuo</h1>
@@ -52,20 +52,24 @@ const HeroCard = (props: Props) => {
                 </p>
 
                 <div className="flex justify-between flex-col sm:flex-row text-center items-center gap-3">
-                  <Link href={"#Contact"} onClick={() => {
-                    setActiveSection("Contact")
-                    setTimeOfLastClick(Date.now())
-                  }} className="bg-gray-900  text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105  transition">
+                  <Link
+                    href={"#Contact"}
+                    onClick={() => {
+                      setActiveSection("Contact");
+                      setTimeOfLastClick(Date.now());
+                    }}
+                    className="bg-gray-900 w-full  text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105  transition"
+                  >
                     Contact
                   </Link>
-                  <a
+                  {/* <a
                     className=" bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
                     href="/CV.pdf"
                     download
                   >
                     Download CV&nbsp;
                     <LuHardDriveDownload className="opacity-60 group-hover:translate-y-1 transition" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -74,29 +78,29 @@ const HeroCard = (props: Props) => {
                 <h1 className="font-bold border-b w-full pb-2 text-left">
                   Hire Precious
                 </h1>
-                <p className="flex border-b w-full pb-2  items-center gap-2 font-medium text-foreground opacity-80">
+                {/* <p className="flex border-b w-full pb-2  items-center gap-2 font-medium text-foreground opacity-80">
                   <PiSignatureBold size={20} /> Full Time Job{" "}
                   <ChevronRight className="ml-auto" />
                 </p>
                 <p className="flex border-b w-full pb-2  items-center gap-2 font-medium text-foreground opacity-80">
                   <TiDocumentDelete size={20} /> Freelancer/Project{" "}
                   <ChevronRight className="ml-auto" />
-                </p>
+                </p> */}
                 {socialLinks.slice(3).map((link, index) => {
                   const Icon = link.icon;
                   const isMail = link.name === "Email";
                   return (
                     <Link
                       target="_blank"
-                      href={
-                        isMail
-                          ? `mailto:${link.url}`
-                          : link.url
-                      }
+                      href={isMail ? `mailto:${link.url}` : link.url}
                       className="flex group border-b w-full pb-2  items-center gap-2 font-medium text-foreground opacity-80"
                       key={index}
                     >
-                      <Icon size={20} /> <span className="group-hover:text-blue-500"> {link.name}</span>{" "}
+                      <Icon size={50} />{" "}
+                      <span className="group-hover:text-blue-500 text-xl">
+                        {" "}
+                        {link.name}
+                      </span>{" "}
                       <ChevronRight className="ml-auto group-hover:opacity-100 opacity-50 text-blue-600" />
                     </Link>
                   );
@@ -116,7 +120,10 @@ const HeroCard = (props: Props) => {
                       className="flex group border-b w-full pb-2  items-center gap-2 font-medium text-foreground opacity-80"
                       key={index}
                     >
-                      <Icon size={20} /> <span className="group-hover:text-blue-500">{link.name}</span>{" "}
+                      <Icon size={50} />{" "}
+                      <span className="group-hover:text-blue-500 text-xl">
+                        {link.name}
+                      </span>{" "}
                       <ChevronRight className="ml-auto group-hover:opacity-100 opacity-50 text-blue-600" />
                     </Link>
                   );

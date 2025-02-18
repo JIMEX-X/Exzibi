@@ -33,38 +33,21 @@ const About = () => {
         <div className="flex flex-col items-center font-medium">
           <div className="content flex flex-col text-left items-center max-w-3xl ml-auto bg-gray-950/5 h-[100%] p-9 rounded-md shadow-sm dark:bg-gray-100/5 overflow-hidden">
             <p className="">
-              I am Precious Abuo, a driven professional with a diverse
-              background in mechanical engineering and a passion for the oil and
-              gas industry. My journey began with a strong academic foundation
-              in mechanical engineering, where I developed a keen eye for
-              detail, problem-solving skills, and a deep understanding of
-              technical concepts.
+              I am a Mechanical Engineering graduate turned Product Manager with
+              a passion for sustainability and climate change advocacy. Holding
+              unto my technical background and strategic expertise, I create
+              customer centric products that drive business success and
+              environmental impact.
             </p>
 
             <p className="mt-8 ">
-              Transitioning into the role of a product manager, I bring a unique
-              blend of technical expertise and strategic thinking to the table.
-              My key responsibilities revolve around defining product
-              strategies, creating roadmaps, overseeing product development
-              lifecycles, and collaborating effectively with cross-functional
-              teams.
+              I am committed to community engagement and volunteering, I strive
+              to empower others and promote sustainable practices.
             </p>
 
             <p className="mt-8 ">
-              As an oil and gas enthusiast, I am deeply interested in leveraging
-              innovative technologies and sustainable practices to drive
-              efficiency, safety, and environmental responsibility within the
-              industry. I thrive in dynamic environments where I can apply my
-              skills in project management, user experience design, and Agile
-              methodologies to deliver impactful solutions.
-            </p>
-
-            <p className="mt-8 ">
-              I am committed to continuous learning, staying updated on industry
-              trends, and building strong relationships with stakeholders to
-              achieve mutual success. I am excited about the opportunities to
-              contribute meaningfully to the oil and gas sector while embracing
-              new challenges and driving
+              I am committed to community engagement and volunteering, I strive
+              to empower others and promote sustainable practices.
             </p>
           </div>
         </div>
