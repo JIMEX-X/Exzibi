@@ -72,8 +72,7 @@ export default function AnimatedContent() {
       <h1 className="hero__heading flex flex-col items-center gap-3 text-balance text-5xl font-medium opacity-0 md:text-6xl">
         Precious Abuo
         <span className="text-sm max-w-xl md:text-xl lg:text-2xl gold">
-          Mechanical Engineering Graduate || FXB USA Climate Advocate ||
-          ForbesBLK Member || Oil and Gas Enthusiast || Product Manager.
+          Product Management | Energy | Climate Science
         </span>
       </h1>
 
