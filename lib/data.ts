@@ -1,5 +1,14 @@
 import React from "react";
-import { FaEnvelope, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaMedium, FaPhoneAlt, FaTwitter } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaMedium,
+  FaPhoneAlt,
+  FaTwitter,
+} from "react-icons/fa";
 import asapApp from "@/public/asap.jpg";
 import asapWeb from "@/public/asapweb.jpg";
 import plito from "@/public/plito.jpg";
@@ -28,26 +37,25 @@ export const projectsData = [
   },
 ] as const;
 
-
 export const certificateLink = [
-  'https://www.credly.com/badges/92ded78e-5803-4c13-a206-04686d062301/public_url',
-  'https://www.credly.com/badges/d7612ff8-53b2-4f4e-885e-01f8234120d3/public_url',
-  'https://drive.google.com/file/d/1YGVIjPAtzjqTzuBi3A1fXkT6vtUXVe0p/view?usp=drivesdk',
-  'https://drive.google.com/file/d/107ly0VZq7e0tIyrSFampt2fb8oI8edON/view?usp=drivesdk',
-  'https://drive.google.com/file/d/1DJrKJUHfUEYXGSQkcdwtizteVey8JIKr/view?usp=drivesdk',
-  'https://drive.google.com/file/d/13rHnDgC40iEQk1--nKtyHcpKn1JWMCHl/view?usp=drivesdk',
-  'https://drive.google.com/file/d/1knxq-2xZRJxGZ6s0K9sFXUEXSje5vGZP/view?usp=drivesdk',
-  'https://drive.google.com/file/d/1koN4QJdYBF9_JP-M61y2Bh5n7p-W7vTx/view?usp=drivesdk',
-  'https://drive.google.com/file/d/1dbkGsYtCTEbghW7rcivwZ_pq_S350ThF/view?usp=drivesdk',
-  'https://drive.google.com/file/d/1LNOVVlRtvlSN9QafNhtB19XSyHf5HYoq/view?usp=drivesdk',
-]
+  "https://www.credly.com/badges/92ded78e-5803-4c13-a206-04686d062301/public_url",
+  "https://www.credly.com/badges/d7612ff8-53b2-4f4e-885e-01f8234120d3/public_url",
+  "https://drive.google.com/file/d/1YGVIjPAtzjqTzuBi3A1fXkT6vtUXVe0p/view?usp=drivesdk",
+  "https://drive.google.com/file/d/107ly0VZq7e0tIyrSFampt2fb8oI8edON/view?usp=drivesdk",
+  "https://drive.google.com/file/d/1DJrKJUHfUEYXGSQkcdwtizteVey8JIKr/view?usp=drivesdk",
+  "https://drive.google.com/file/d/13rHnDgC40iEQk1--nKtyHcpKn1JWMCHl/view?usp=drivesdk",
+  "https://drive.google.com/file/d/1knxq-2xZRJxGZ6s0K9sFXUEXSje5vGZP/view?usp=drivesdk",
+  "https://drive.google.com/file/d/1koN4QJdYBF9_JP-M61y2Bh5n7p-W7vTx/view?usp=drivesdk",
+  "https://drive.google.com/file/d/1dbkGsYtCTEbghW7rcivwZ_pq_S350ThF/view?usp=drivesdk",
+  "https://drive.google.com/file/d/1LNOVVlRtvlSN9QafNhtB19XSyHf5HYoq/view?usp=drivesdk",
+];
 
 export const articleData = [
-  'https://medium.com/@abuopearl/embracing-diversity-and-inclusion-in-engineering-management-fb5c6ec7f22a',
-  'https://medium.com/@abuopearl/the-troubling-saga-of-property-mismanagement-in-nigeria-19498ecd6d6f',
-  'https://medium.com/@abuopearl/adopting-sustainable-practices-in-engineering-management-for-long-term-success-fdf2ef8ccd8b',
-  'https://medium.com/@abuopearl/the-evolution-of-agile-product-management-from-theory-to-practice-c007a630060a',
-] as const
+  "https://medium.com/@abuopearl/embracing-diversity-and-inclusion-in-engineering-management-fb5c6ec7f22a",
+  "https://medium.com/@abuopearl/the-troubling-saga-of-property-mismanagement-in-nigeria-19498ecd6d6f",
+  "https://medium.com/@abuopearl/adopting-sustainable-practices-in-engineering-management-for-long-term-success-fdf2ef8ccd8b",
+  "https://medium.com/@abuopearl/the-evolution-of-agile-product-management-from-theory-to-practice-c007a630060a",
+] as const;
 
 export const links = [
   {
@@ -157,7 +165,7 @@ export const socialLinks = [
   },
   {
     name: "Instagram",
-    url: "https://www.instagram.com/juju__hephaestus?igsh=bnVoNmI2a3l1N3p4&utm_source=qr",
+    url: "https://www.instagram.com/precious_abuo/profilecard",
     icon: FaInstagram,
   },
   {
@@ -177,8 +185,7 @@ export const socialLinks = [
   },
   {
     name: "Medium",
-    url: "abuopearl@gmail.com",
+    url: "https://medium.com/@PreciousAbuo",
     icon: FaMedium,
   },
 ] as const;
-

@@ -1,7 +1,7 @@
 "use client";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
-import image from "@/public/exi.jpg";
+import image from "@/public/exibi-pink.jpg";
 import SectionHeading from "./section-heading";
 import Image from "next/image";
 const About = () => {
@@ -15,7 +15,7 @@ const About = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
     >
-      <div className="w-full bg-gray-950/5 overflow-hidden rounded-md relative h-60">
+      <div className="w-full bg-gray-950/35 overflow-hidden rounded-md relative h-60">
         <Image
           src={image}
           alt="about"
@@ -23,8 +23,8 @@ const About = () => {
           height={200}
           className=" bg-cover absolute w-full object-cover"
         ></Image>
-        <div className="absolute inset-0 backdrop-blur-lg flex items-center justify-center">
-          <h1 className="text-3xl font-medium capitalize text-center !z-50 text-gray-50">
+        <div className="absolute inset-0 bg-black/50  flex items-center justify-center">
+          <h1 className="text-3xl  font-medium capitalize text-center !z-50 text-gray-50">
             About me
           </h1>
         </div>
@@ -38,11 +38,6 @@ const About = () => {
               unto my technical background and strategic expertise, I create
               customer centric products that drive business success and
               environmental impact.
-            </p>
-
-            <p className="mt-8 ">
-              I am committed to community engagement and volunteering, I strive
-              to empower others and promote sustainable practices.
             </p>
 
             <p className="mt-8 ">

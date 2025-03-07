@@ -71,7 +71,7 @@ export default function AnimatedContent() {
       <StarGrid />
       <h1 className="hero__heading flex flex-col items-center gap-3 text-balance text-5xl font-medium opacity-0 md:text-6xl">
         Precious Abuo
-        <span className="text-sm max-w-xl md:text-xl lg:text-2xl gold">
+        <span className=" max-w-xl text-xl lg:text-2xl gold">
           Product Management | Energy | Climate Science
         </span>
       </h1>

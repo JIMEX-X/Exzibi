@@ -96,7 +96,7 @@ const HeroCard = (props: Props) => {
                       className="flex group border-b w-full pb-2  items-center gap-2 font-medium text-foreground opacity-80"
                       key={index}
                     >
-                      <Icon size={50} />{" "}
+                      <Icon size={30} />{" "}
                       <span className="group-hover:text-blue-500 text-xl">
                         {" "}
                         {link.name}
@@ -120,7 +120,7 @@ const HeroCard = (props: Props) => {
                       className="flex group border-b w-full pb-2  items-center gap-2 font-medium text-foreground opacity-80"
                       key={index}
                     >
-                      <Icon size={50} />{" "}
+                      <Icon size={30} />{" "}
                       <span className="group-hover:text-blue-500 text-xl">
                         {link.name}
                       </span>{" "}
