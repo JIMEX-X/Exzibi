@@ -48,7 +48,7 @@ const HeroCard = (props: Props) => {
               <div className="flex gap-3 items-center flex-col mt-3">
                 <h1 className="font-bold">Precious Abuo</h1>
                 <p className="flex items-center gap-2 font-medium text-foreground opacity-80">
-                  <MapPin size={20} /> NIGERIA
+                  <MapPin size={20} /> REMOTE
                 </p>
 
                 <div className="flex justify-between flex-col sm:flex-row text-center items-center gap-3">
